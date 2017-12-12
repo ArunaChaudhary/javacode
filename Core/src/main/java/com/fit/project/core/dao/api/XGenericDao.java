@@ -7,7 +7,7 @@ import com.fit.entity.criteria.common.BaseCriteria;
 import com.fit.exceptions.ConsistencyViolationException;
 import com.fit.exceptions.DAOException;
 import com.fit.exceptions.DuplicatedEntryException;
-import com.fit.project.core.util.FetchMode;
+import com.fit.project.entity.util.FetchMode;
 
 public interface XGenericDao<T extends BaseBean, C extends BaseCriteria> {
 
