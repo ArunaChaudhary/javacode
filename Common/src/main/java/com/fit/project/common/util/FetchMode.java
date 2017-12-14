@@ -1,4 +1,4 @@
-package com.fit.project.entity.util;
+package com.fit.project.common.util;
 
 public enum FetchMode {
 	LAZY, EAGER;

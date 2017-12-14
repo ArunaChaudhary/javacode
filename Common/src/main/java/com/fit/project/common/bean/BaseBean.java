@@ -1,9 +1,14 @@
-package com.fit.entity.bean.common;
+package com.fit.project.common.bean;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -23,22 +28,29 @@ public class BaseBean implements Serializable {
 		INSERT, UPDATE, DELETE;
 	}
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
+	@Column
 	private long recordRegId;
 	@JsonIgnore
+	@Column
 	private long recordUpdId;
 	// @JsonIgnore
 	@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	@JsonSerialize(using = LocalDateTimeSerializer.class)
+	@Column
 	private LocalDateTime recordRegDate;
 	// @JsonIgnore
 	@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
 	@JsonDeserialize(using = LocalDateTimeDeserializer.class)
 	@JsonSerialize(using = LocalDateTimeSerializer.class)
+	@Column
 	private LocalDateTime recordUpdDate;
 	@JsonIgnore
+	@Column
 	private TransactionType transactionType;
 
 	protected String convertDateAsString(LocalDate date) {

@@ -1,4 +1,4 @@
-package com.fit.entity.criteria.common;
+package com.fit.project.common.criteria;
 
 import java.util.List;
 

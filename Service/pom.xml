@@ -7,14 +7,15 @@
   </parent>
   <artifactId>Service</artifactId>
   <dependencies>
-  <dependency>
+  
+	<dependency>
 		<groupId>com.fit.project</groupId>
-		<artifactId>Entity</artifactId>
+		<artifactId>Exception</artifactId>
 		<version>1.0</version>
 	</dependency>
 	<dependency>
 		<groupId>com.fit.project</groupId>
-		<artifactId>Exception</artifactId>
+		<artifactId>Common</artifactId>
 		<version>1.0</version>
 	</dependency>
   </dependencies>

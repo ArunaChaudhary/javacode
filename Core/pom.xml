@@ -14,7 +14,7 @@
 	</dependency>
 	<dependency>
 		<groupId>com.fit.project</groupId>
-		<artifactId>Entity</artifactId>
+		<artifactId>Common</artifactId>
 		<version>1.0</version>
 	</dependency>
   </dependencies>

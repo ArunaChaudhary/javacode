@@ -72,5 +72,6 @@
 		<module>Entity</module>
 		<module>Exception</module>
 		<module>Service</module>
+		<module>Common</module>
 	</modules>
 </project>

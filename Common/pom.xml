@@ -5,13 +5,17 @@
     <artifactId>java_project</artifactId>
     <version>1.0</version>
   </parent>
-  <artifactId>Entity</artifactId>
-  
-  
+  <artifactId>Common</artifactId>
   <dependencies>
   	<dependency>
-  		<groupId>com.fasterxml.jackson.datatype</groupId>
-  		<artifactId>jackson-datatype-joda</artifactId>
-  	</dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-annotations</artifactId>
+		<version>3.5.6-Final</version>
+	</dependency>
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-annotations</artifactId>
+		<version>3.5.6-Final</version>
+		</dependency>
   </dependencies>
 </project>
